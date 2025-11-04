@@ -1,0 +1,23 @@
+import polars as pl
+import os
+
+# Constants
+BASE_DIR = os.path.join(os.getcwd(), 'THD Data Warehouse')
+DATA_TABLES_DIR = os.path.join(BASE_DIR, 'Data_Tables')
+
+# Load existing Parquet and add new columns if not present
+parquet_file = os.path.join(DATA_TABLES_DIR, 'online_website_anaylsis.parquet')
+if os.path.exists(parquet_file):
+    df = pl.read_parquet(parquet_file)
+    if 'order count TY' not in df.columns:
+        df = df.with_columns(
+            (pl.col("online pip visits +") * pl.col("online pip conversion rate +")).alias("order count TY")
+        )
+    if 'order count LY' not in df.columns:
+        df = df.with_columns(
+            (pl.col("online pip visits ly +") * pl.col("online pip conversion rate ly +")).alias("order count LY")
+        )
+    df.write_parquet(parquet_file)
+    print("Updated existing Parquet with new columns.")
+else:
+    print("No existing Parquet found.")

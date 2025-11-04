@@ -1,0 +1,665 @@
+2025-08-05 12:30:56,301 - INFO - Successfully loaded all Parquet files
+2025-08-05 13:03:57,096 - INFO - Successfully loaded all Parquet files
+2025-08-08 10:12:44,454 - INFO - Successfully loaded all Parquet files
+2025-08-08 10:23:53,022 - INFO - Successfully performed data joins
+2025-08-08 10:23:53,042 - ERROR - Failed to extract week and year: expected String type, got: cat
+2025-08-08 10:56:08,656 - INFO - Successfully loaded all Parquet files
+2025-08-08 10:57:40,256 - INFO - Successfully performed data joins
+2025-08-08 10:57:40,273 - ERROR - Failed to extract week and year: expected String type, got: cat
+2025-08-08 11:05:58,668 - INFO - Successfully loaded all Parquet files
+2025-08-08 11:07:31,003 - INFO - Successfully performed data joins
+2025-08-08 11:19:12,367 - INFO - Successfully loaded all Parquet files
+2025-08-08 11:33:43,532 - INFO - Successfully loaded all Parquet files
+2025-08-08 11:47:14,427 - INFO - Successfully loaded all Parquet files
+2025-08-08 11:52:31,279 - INFO - Successfully loaded all Parquet files
+2025-08-08 15:37:15,289 - INFO - Successfully loaded all Parquet files
+2025-08-08 15:43:27,277 - INFO - Successfully loaded all Parquet files
+2025-08-08 15:44:03,774 - INFO - Successfully loaded all Parquet files
+2025-08-08 15:55:48,105 - INFO - Successfully loaded all Parquet files
+2025-08-11 09:18:20,376 - INFO - Successfully loaded all Parquet files
+2025-08-11 11:08:20,137 - INFO - Successfully loaded all Parquet files
+2025-08-11 13:44:03,868 - INFO - Successfully loaded all Parquet files
+2025-08-11 13:48:24,721 - INFO - Successfully loaded all Parquet files
+2025-08-11 13:54:02,318 - INFO - Successfully loaded all Parquet files
+2025-08-11 14:11:25,749 - INFO - Successfully scanned all Parquet files
+2025-08-11 15:01:21,235 - INFO - Successfully scanned all Parquet files
+2025-08-11 15:01:42,875 - INFO - sales_full estimated rows: 43575062
+2025-08-11 15:03:34,858 - INFO - Successfully scanned all Parquet files
+2025-08-11 15:04:07,055 - INFO - sales_full estimated rows: 43575062
+2025-08-11 15:14:49,085 - INFO - Successfully scanned all Parquet files
+2025-08-11 15:15:21,217 - INFO - sales_full estimated rows: 43575062
+2025-08-11 15:26:49,838 - INFO - Successfully scanned all Parquet files
+2025-08-11 15:27:22,221 - INFO - sales_full estimated rows: 43575062
+2025-08-11 15:33:46,925 - INFO - Successfully scanned all Parquet files
+2025-08-11 15:34:29,737 - INFO - sales_full estimated rows: 43575062
+2025-08-14 15:19:30,640 - INFO - Loading data lazily...
+2025-08-14 15:19:30,659 - INFO - Scanned and filtered online_sales.parquet
+2025-08-14 15:19:30,660 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-14 15:19:30,660 - INFO - Scanned merged_classification.parquet
+2025-08-14 15:19:30,661 - INFO - Scanned and filtered online_stores.parquet
+2025-08-14 15:19:30,661 - INFO - Successfully scanned all Parquet files
+2025-08-14 15:19:30,670 - INFO - Data scanned in 0.03 seconds. Memory: Python: 182.26 MB, Total Used: 12777.96 MB, Available: 2867.64 MB
+2025-08-14 15:19:30,671 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-14 15:19:30,672 - INFO - Casting complete in sales.
+2025-08-14 15:19:30,672 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-14 15:19:30,672 - INFO - Casting complete in stores.
+2025-08-14 15:19:30,673 - INFO - Starting lazy data joins...
+2025-08-14 15:19:30,673 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-14 15:19:30,701 - INFO - 1. (sales_class join - Python Mem: 182.36 MB, Total Used: 12763.30 MB, Available: 2882.29 MB)
+2025-08-14 15:19:31,098 - INFO - sales_class join complete. Memory: Python: 705.73 MB, Total Used: 13289.91 MB, Available: 2355.69 MB
+2025-08-14 15:19:31,098 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-14 15:19:31,113 - INFO - 1. (re-casting - Python Mem: 705.81 MB, Total Used: 13289.97 MB, Available: 2355.62 MB)
+2025-08-14 15:19:31,118 - INFO - Re-casting complete in sales_class.
+2025-08-14 15:19:31,118 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-14 15:26:00,361 - INFO - Loading data lazily...
+2025-08-14 15:26:00,362 - INFO - Scanned and filtered online_sales.parquet
+2025-08-14 15:26:00,363 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-14 15:26:00,363 - INFO - Scanned merged_classification.parquet
+2025-08-14 15:26:00,363 - INFO - Scanned and filtered online_stores.parquet
+2025-08-14 15:26:00,363 - INFO - Successfully scanned all Parquet files
+2025-08-14 15:26:00,368 - INFO - Data scanned in 0.01 seconds. Memory: Python: 182.64 MB, Total Used: 8067.05 MB, Available: 7578.54 MB
+2025-08-14 15:26:00,369 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-14 15:26:00,369 - INFO - Casting complete in sales.
+2025-08-14 15:26:00,370 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-14 15:26:00,370 - INFO - Casting complete in stores.
+2025-08-14 15:26:00,370 - INFO - Starting lazy data joins...
+2025-08-14 15:26:00,371 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-14 15:26:00,382 - INFO - 1. (sales_class join - Python Mem: 182.75 MB, Total Used: 8065.81 MB, Available: 7579.79 MB)
+2025-08-14 15:26:03,390 - INFO - sales_class join (lazy) complete. Memory: Python: 182.73 MB, Total Used: 8055.47 MB, Available: 7590.12 MB
+2025-08-14 15:26:03,390 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-14 15:26:03,396 - INFO - Re-casting complete in sales_class.
+2025-08-14 15:26:03,397 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-14 15:26:03,408 - INFO - 1. (sales_full join - Python Mem: 182.75 MB, Total Used: 8051.95 MB, Available: 7593.65 MB)
+2025-08-14 15:26:06,418 - INFO - sales_full join complete. Memory: Python: 3294.66 MB, Total Used: 11139.18 MB, Available: 4506.42 MB
+2025-08-14 15:26:06,418 - INFO - Lazy joining website to classification on 'oms id +'...
+2025-08-14 15:26:06,427 - INFO - 1. (website_class join - Python Mem: 3294.68 MB, Total Used: 11139.43 MB, Available: 4506.17 MB)
+2025-08-14 15:26:09,429 - INFO - website_class join complete.
+2025-08-14 15:26:09,430 - INFO - Successfully performed data joins
+2025-08-14 15:26:09,430 - INFO - Data joins completed in 9.06 seconds.
+2025-08-14 15:26:09,490 - INFO - Cleared temporary variables.
+2025-08-14 15:26:09,490 - INFO - Extracting week for sales_full...
+2025-08-14 15:26:09,491 - INFO - Extracting week and year for sales_full...
+2025-08-14 15:26:09,927 - INFO - sales_full week extraction complete.
+2025-08-14 15:26:09,927 - INFO - Extracting week for website_class...
+2025-08-14 15:26:09,927 - INFO - Extracting week and year for website_class...
+2025-08-14 15:26:10,021 - INFO - website_class week extraction complete.
+2025-08-14 15:26:10,021 - INFO - Identifying recent week...
+2025-08-14 15:26:10,205 - INFO - Most recent week: Fiscal Week 8 of 2025, Week Number: 8, Year: 2025
+2025-08-14 15:26:10,205 - INFO - Recent week identified: Fiscal Week 8 of 2025
+2025-08-14 15:26:10,206 - INFO - Safe recent_week for files: Fiscal_Week_8_of_2025
+2025-08-14 15:26:10,206 - INFO - Filtering recent sales...
+2025-08-14 15:26:10,278 - INFO - Recent sales filtered.
+2025-08-14 15:26:10,279 - INFO - Starting aggregations...
+2025-08-14 15:26:10,279 - INFO - Aggregating by ['online merch dept +', 'online class +', 'online subclass +']...
+2025-08-14 15:26:10,361 - INFO - Aggregated sales by ['online merch dept +', 'online class +', 'online subclass +']
+2025-08-14 15:26:10,362 - INFO - Aggregated by ['online merch dept +', 'online class +', 'online subclass +'] in 0.08 seconds.
+2025-08-14 15:26:10,362 - INFO - Aggregating by ['M P G', 'MPG Name']...
+2025-08-14 15:26:10,431 - INFO - Aggregated sales by ['M P G', 'MPG Name']
+2025-08-14 15:26:10,432 - INFO - Aggregated by ['M P G', 'MPG Name'] in 0.07 seconds.
+2025-08-14 15:26:10,432 - INFO - Aggregations complete.
+2025-08-14 15:26:10,433 - INFO - Calculating classification split...
+2025-08-14 15:26:10,443 - INFO - Classification split calculated.
+2025-08-14 15:26:10,443 - INFO - Calculating ship from agg...
+2025-08-14 15:26:10,519 - INFO - Ship from agg calculated.
+2025-08-14 15:26:10,520 - INFO - Identifying standouts...
+2025-08-14 15:26:10,521 - INFO - Standouts identified.
+2025-08-14 15:26:10,521 - INFO - Flagging high returns/cancels...
+2025-08-14 15:26:10,523 - INFO - Flags complete.
+2025-08-14 15:26:10,523 - INFO - Computing 8-week trend...
+2025-08-14 15:26:11,310 - INFO - Computed trend for 8 weeks
+2025-08-14 15:26:11,310 - INFO - 8-week trend computed in 0.79 seconds.
+2025-08-14 15:26:11,312 - INFO - 8-week trend complete.
+2025-08-14 15:26:11,379 - INFO - Cleared sales_full.
+2025-08-14 15:26:11,379 - INFO - Calculating conversion rates...
+2025-08-14 15:26:11,395 - INFO - Failed to compute website conversion rates: 'float' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 321, in <module>
+    conv_ty = (recent_website['order count TY'].sum() / recent_website['online pip visits +'].sum().replace(0, 1)) * 100
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'replace'
+
+2025-08-14 15:26:11,395 - ERROR - Failed to compute website conversion rates: 'float' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 321, in <module>
+    conv_ty = (recent_website['order count TY'].sum() / recent_website['online pip visits +'].sum().replace(0, 1)) * 100
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'replace'
+
+2025-08-14 15:31:58,751 - INFO - Loading data lazily...
+2025-08-14 15:31:58,752 - INFO - Scanned and filtered online_sales.parquet
+2025-08-14 15:31:58,752 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-14 15:31:58,753 - INFO - Scanned merged_classification.parquet
+2025-08-14 15:31:58,753 - INFO - Scanned and filtered online_stores.parquet
+2025-08-14 15:31:58,753 - INFO - Successfully scanned all Parquet files
+2025-08-14 15:31:58,758 - INFO - Data scanned in 0.01 seconds. Memory: Python: 181.62 MB, Total Used: 8040.99 MB, Available: 7604.61 MB
+2025-08-14 15:31:58,758 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-14 15:31:58,758 - INFO - Casting complete in sales.
+2025-08-14 15:31:58,758 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-14 15:31:58,759 - INFO - Casting complete in stores.
+2025-08-14 15:31:58,759 - INFO - Starting lazy data joins...
+2025-08-14 15:31:58,759 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-14 15:31:58,768 - INFO - 1. (sales_class join - Python Mem: 181.69 MB, Total Used: 8041.21 MB, Available: 7604.38 MB)
+2025-08-14 15:32:01,776 - INFO - sales_class join (lazy) complete. Memory: Python: 181.70 MB, Total Used: 8003.21 MB, Available: 7642.39 MB
+2025-08-14 15:32:01,777 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-14 15:32:01,785 - INFO - 1. (re-casting - Python Mem: 181.73 MB, Total Used: 8003.23 MB, Available: 7642.37 MB)
+2025-08-14 15:32:04,788 - INFO - Re-casting complete in sales_class.
+2025-08-14 15:32:04,788 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-14 15:32:04,797 - INFO - 1. (sales_full join - Python Mem: 181.73 MB, Total Used: 7999.89 MB, Available: 7645.70 MB)
+2025-08-14 15:32:07,806 - INFO - sales_full join complete. Memory: Python: 3327.77 MB, Total Used: 10965.89 MB, Available: 4679.70 MB
+2025-08-14 15:32:07,806 - INFO - Lazy joining website to classification on 'oms id +'...
+2025-08-14 15:32:07,815 - INFO - 1. (website_class join - Python Mem: 3327.79 MB, Total Used: 10966.99 MB, Available: 4678.61 MB)
+2025-08-14 15:32:10,817 - INFO - website_class join complete.
+2025-08-14 15:32:10,817 - INFO - Successfully performed data joins
+2025-08-14 15:32:10,818 - INFO - Data joins completed in 12.06 seconds.
+2025-08-14 15:32:10,874 - INFO - Cleared temporary variables.
+2025-08-14 15:32:10,874 - INFO - Extracting week for sales_full...
+2025-08-14 15:32:10,875 - INFO - Extracting week and year for sales_full...
+2025-08-14 15:32:11,331 - INFO - sales_full week extraction complete.
+2025-08-14 15:32:11,332 - INFO - Extracting week for website_class...
+2025-08-14 15:32:11,332 - INFO - Extracting week and year for website_class...
+2025-08-14 15:32:11,401 - INFO - website_class week extraction complete.
+2025-08-14 15:32:11,401 - INFO - Identifying recent week...
+2025-08-14 15:32:11,581 - INFO - Most recent week: Fiscal Week 8 of 2025, Week Number: 8, Year: 2025
+2025-08-14 15:32:11,582 - INFO - Recent week identified: Fiscal Week 8 of 2025
+2025-08-14 15:32:11,582 - INFO - Safe recent_week for files: Fiscal_Week_8_of_2025
+2025-08-14 15:32:11,582 - INFO - Filtering recent sales...
+2025-08-14 15:32:11,656 - INFO - Recent sales filtered.
+2025-08-14 15:32:11,656 - INFO - Starting aggregations...
+2025-08-14 15:32:11,656 - INFO - Aggregating by ['online merch dept +', 'online class +', 'online subclass +']...
+2025-08-14 15:32:11,731 - INFO - Aggregated sales by ['online merch dept +', 'online class +', 'online subclass +']
+2025-08-14 15:32:11,732 - INFO - Aggregated by ['online merch dept +', 'online class +', 'online subclass +'] in 0.08 seconds.
+2025-08-14 15:32:11,732 - INFO - Aggregations complete.
+2025-08-14 15:32:11,732 - INFO - Calculating classification split...
+2025-08-14 15:32:11,742 - INFO - Classification split calculated.
+2025-08-14 15:32:11,742 - INFO - Calculating ship from agg...
+2025-08-14 15:32:11,795 - INFO - Ship from agg calculated.
+2025-08-14 15:32:11,795 - INFO - Identifying standouts...
+2025-08-14 15:32:11,796 - INFO - Standouts identified.
+2025-08-14 15:32:11,797 - INFO - Flagging high returns/cancels...
+2025-08-14 15:32:11,798 - INFO - Flags complete.
+2025-08-14 15:32:11,798 - INFO - Computing 8-week trend...
+2025-08-14 15:32:12,471 - INFO - Computed trend for 8 weeks
+2025-08-14 15:32:12,472 - INFO - 8-week trend computed in 0.67 seconds.
+2025-08-14 15:32:12,473 - INFO - 8-week trend complete.
+2025-08-14 15:32:12,544 - INFO - Cleared sales_full.
+2025-08-14 15:32:12,545 - INFO - Calculating conversion rates...
+2025-08-14 15:32:12,561 - INFO - Conversion Rates - TY: 10.94%, LY: 9.72%
+2025-08-14 15:32:12,561 - INFO - Conversion rates calculated: TY 10.94%, LY 9.72%
+2025-08-14 15:32:12,614 - INFO - Cleared website_class.
+2025-08-14 15:32:12,614 - INFO - Generating plots...
+2025-08-14 15:32:22,842 - INFO - Saved plot: 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:32:22,843 - INFO - Saved 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:32:22,843 - INFO - Plots generated.
+2025-08-14 15:32:22,843 - INFO - Exporting to Excel...
+2025-08-14 15:32:22,965 - INFO - Exported class_agg
+2025-08-14 15:32:22,966 - INFO - Exported key data to Excel
+2025-08-14 15:32:22,966 - INFO - Excel exports completed.
+2025-08-14 15:32:22,966 - INFO - Generating insights...
+2025-08-14 15:46:30,371 - INFO - Loading data lazily...
+2025-08-14 15:46:30,373 - INFO - Scanned and filtered online_sales.parquet
+2025-08-14 15:46:30,373 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-14 15:46:30,373 - INFO - Scanned merged_classification.parquet
+2025-08-14 15:46:30,374 - INFO - Scanned and filtered online_stores.parquet
+2025-08-14 15:46:30,374 - INFO - Successfully scanned all Parquet files
+2025-08-14 15:46:30,379 - INFO - Data scanned in 0.01 seconds. Memory: Python: 182.00 MB, Total Used: 6981.87 MB, Available: 8663.73 MB
+2025-08-14 15:46:30,379 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-14 15:46:30,379 - INFO - Casting complete in sales.
+2025-08-14 15:46:30,379 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-14 15:46:30,380 - INFO - Casting complete in stores.
+2025-08-14 15:46:30,380 - INFO - Starting lazy data joins...
+2025-08-14 15:46:30,380 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-14 15:46:30,389 - INFO - 1. (sales_class join - Python Mem: 182.10 MB, Total Used: 6982.36 MB, Available: 8663.23 MB)
+2025-08-14 15:46:33,395 - INFO - sales_class join (lazy) complete. Memory: Python: 182.07 MB, Total Used: 6728.46 MB, Available: 8917.14 MB
+2025-08-14 15:46:33,395 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-14 15:46:33,400 - INFO - Re-casting complete in sales_class.
+2025-08-14 15:46:33,401 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-14 15:46:33,411 - INFO - 1. (sales_full join - Python Mem: 182.20 MB, Total Used: 6726.03 MB, Available: 8919.57 MB)
+2025-08-14 15:46:36,419 - INFO - sales_full join complete. Memory: Python: 3251.27 MB, Total Used: 9790.17 MB, Available: 5855.43 MB
+2025-08-14 15:46:36,419 - INFO - Lazy joining website to classification on 'oms id +'...
+2025-08-14 15:46:36,428 - INFO - 1. (website_class join - Python Mem: 3251.29 MB, Total Used: 9790.48 MB, Available: 5855.11 MB)
+2025-08-14 15:46:39,430 - INFO - website_class join complete.
+2025-08-14 15:46:39,430 - INFO - Successfully performed data joins
+2025-08-14 15:46:39,430 - INFO - Data joins completed in 9.05 seconds.
+2025-08-14 15:46:39,482 - INFO - Cleared temporary variables.
+2025-08-14 15:46:39,482 - INFO - Extracting week for sales_full...
+2025-08-14 15:46:39,483 - INFO - Extracting week and year for sales_full...
+2025-08-14 15:46:39,902 - INFO - sales_full week extraction complete.
+2025-08-14 15:46:39,902 - INFO - Extracting week for website_class...
+2025-08-14 15:46:39,902 - INFO - Extracting week and year for website_class...
+2025-08-14 15:46:39,984 - INFO - website_class week extraction complete.
+2025-08-14 15:46:39,984 - INFO - Identifying recent week...
+2025-08-14 15:46:40,164 - INFO - Most recent week: Fiscal Week 8 of 2025, Week Number: 8, Year: 2025
+2025-08-14 15:46:40,164 - INFO - Recent week identified: Fiscal Week 8 of 2025
+2025-08-14 15:46:40,164 - INFO - Safe recent_week for files: Fiscal_Week_8_of_2025
+2025-08-14 15:46:40,164 - INFO - Filtering recent sales...
+2025-08-14 15:46:40,240 - INFO - Recent sales filtered.
+2025-08-14 15:46:40,240 - INFO - Starting aggregations...
+2025-08-14 15:46:40,240 - INFO - Aggregating by ['online merch dept +', 'online class +', 'online subclass +']...
+2025-08-14 15:46:40,318 - INFO - Aggregated sales by ['online merch dept +', 'online class +', 'online subclass +']
+2025-08-14 15:46:40,318 - INFO - Aggregated by ['online merch dept +', 'online class +', 'online subclass +'] in 0.08 seconds.
+2025-08-14 15:46:40,319 - INFO - Aggregations complete.
+2025-08-14 15:46:40,319 - INFO - Calculating classification split...
+2025-08-14 15:46:40,328 - INFO - Classification split calculated.
+2025-08-14 15:46:40,328 - INFO - Calculating ship from agg...
+2025-08-14 15:46:40,381 - INFO - Ship from agg calculated.
+2025-08-14 15:46:40,381 - INFO - Identifying standouts...
+2025-08-14 15:46:40,382 - INFO - Standouts identified.
+2025-08-14 15:46:40,382 - INFO - Flagging high returns/cancels...
+2025-08-14 15:46:40,386 - INFO - Flags complete.
+2025-08-14 15:46:40,386 - INFO - Computing 8-week trend...
+2025-08-14 15:46:40,900 - INFO - Computed trend for 8 weeks
+2025-08-14 15:46:40,900 - INFO - 8-week trend computed in 0.51 seconds.
+2025-08-14 15:46:40,901 - INFO - 8-week trend complete.
+2025-08-14 15:46:40,953 - INFO - Cleared sales_full.
+2025-08-14 15:46:40,953 - INFO - Calculating conversion rates...
+2025-08-14 15:46:40,968 - INFO - Conversion Rates - TY: 10.94%, LY: 9.72%
+2025-08-14 15:46:40,968 - INFO - Conversion rates calculated: TY 10.94%, LY 9.72%
+2025-08-14 15:46:41,032 - INFO - Cleared website_class.
+2025-08-14 15:46:41,032 - INFO - Generating plots...
+2025-08-14 15:48:19,467 - INFO - Saved plot: 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:48:19,467 - INFO - Saved 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:48:19,468 - INFO - Plots generated.
+2025-08-14 15:48:19,468 - INFO - Exporting to Excel...
+2025-08-14 15:48:19,532 - INFO - Exported class_agg
+2025-08-14 15:48:19,533 - INFO - Exported key data to Excel
+2025-08-14 15:48:19,533 - INFO - Excel exports completed.
+2025-08-14 15:48:19,533 - INFO - Generating insights...
+2025-08-14 15:48:19,534 - INFO - Sales Growth: 17522.20%
+2025-08-14 15:48:19,537 - INFO - Insights generated.
+2025-08-14 15:48:19,538 - INFO - Starting email send...
+2025-08-14 15:48:19,538 - INFO - Preparing email...
+2025-08-14 15:48:20,601 - INFO - Failed to send email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:48:20,601 - ERROR - Failed to send email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:48:20,602 - INFO - Analysis failed: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:48:20,602 - ERROR - Analysis failed: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:48:20,644 - INFO - Failed to send fallback email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 504, in <module>
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:48:20,644 - ERROR - Failed to send fallback email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 504, in <module>
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:49:23,270 - INFO - Loading data lazily...
+2025-08-14 15:49:23,272 - INFO - Scanned and filtered online_sales.parquet
+2025-08-14 15:49:23,272 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-14 15:49:23,272 - INFO - Scanned merged_classification.parquet
+2025-08-14 15:49:23,273 - INFO - Scanned and filtered online_stores.parquet
+2025-08-14 15:49:23,273 - INFO - Successfully scanned all Parquet files
+2025-08-14 15:49:23,279 - INFO - Data scanned in 0.01 seconds. Memory: Python: 181.66 MB, Total Used: 7585.82 MB, Available: 8059.78 MB
+2025-08-14 15:49:23,279 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-14 15:49:23,280 - INFO - Casting complete in sales.
+2025-08-14 15:49:23,280 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-14 15:49:23,280 - INFO - Casting complete in stores.
+2025-08-14 15:49:23,280 - INFO - Starting lazy data joins...
+2025-08-14 15:49:23,280 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-14 15:49:23,291 - INFO - 1. (sales_class join - Python Mem: 181.78 MB, Total Used: 7585.99 MB, Available: 8059.61 MB)
+2025-08-14 15:49:26,299 - INFO - sales_class join (lazy) complete. Memory: Python: 181.79 MB, Total Used: 7572.02 MB, Available: 8073.58 MB
+2025-08-14 15:49:26,299 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-14 15:49:26,310 - INFO - 1. (re-casting - Python Mem: 181.82 MB, Total Used: 7572.02 MB, Available: 8073.58 MB)
+2025-08-14 15:49:29,312 - INFO - Re-casting complete in sales_class.
+2025-08-14 15:49:29,312 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-14 15:49:29,324 - INFO - 1. (sales_full join - Python Mem: 181.95 MB, Total Used: 7628.20 MB, Available: 8017.40 MB)
+2025-08-14 15:49:32,331 - INFO - sales_full join complete. Memory: Python: 3219.02 MB, Total Used: 10709.72 MB, Available: 4935.88 MB
+2025-08-14 15:49:32,331 - INFO - Lazy joining website to classification on 'oms id +'...
+2025-08-14 15:49:32,347 - INFO - 1. (website_class join - Python Mem: 3265.22 MB, Total Used: 10709.72 MB, Available: 4935.88 MB)
+2025-08-14 15:49:35,350 - INFO - website_class join complete.
+2025-08-14 15:49:35,351 - INFO - Successfully performed data joins
+2025-08-14 15:49:35,351 - INFO - Data joins completed in 12.07 seconds.
+2025-08-14 15:49:35,405 - INFO - Cleared temporary variables.
+2025-08-14 15:49:35,405 - INFO - Extracting week for sales_full...
+2025-08-14 15:49:35,405 - INFO - Extracting week and year for sales_full...
+2025-08-14 15:49:35,858 - INFO - sales_full week extraction complete.
+2025-08-14 15:49:35,858 - INFO - Extracting week for website_class...
+2025-08-14 15:49:35,858 - INFO - Extracting week and year for website_class...
+2025-08-14 15:49:35,941 - INFO - website_class week extraction complete.
+2025-08-14 15:49:35,941 - INFO - Identifying recent week...
+2025-08-14 15:49:36,113 - INFO - Most recent week: Fiscal Week 8 of 2025, Week Number: 8, Year: 2025
+2025-08-14 15:49:36,114 - INFO - Recent week identified: Fiscal Week 8 of 2025
+2025-08-14 15:49:36,114 - INFO - Safe recent_week for files: Fiscal_Week_8_of_2025
+2025-08-14 15:49:36,114 - INFO - Filtering recent sales...
+2025-08-14 15:49:36,188 - INFO - Recent sales filtered.
+2025-08-14 15:49:36,188 - INFO - Starting aggregations...
+2025-08-14 15:49:36,188 - INFO - Aggregating by ['online merch dept +', 'online class +', 'online subclass +']...
+2025-08-14 15:49:36,266 - INFO - Aggregated sales by ['online merch dept +', 'online class +', 'online subclass +']
+2025-08-14 15:49:36,266 - INFO - Aggregated by ['online merch dept +', 'online class +', 'online subclass +'] in 0.08 seconds.
+2025-08-14 15:49:36,266 - INFO - Aggregations complete.
+2025-08-14 15:49:36,267 - INFO - Calculating classification split...
+2025-08-14 15:49:36,275 - INFO - Classification split calculated.
+2025-08-14 15:49:36,276 - INFO - Calculating ship from agg...
+2025-08-14 15:49:36,329 - INFO - Ship from agg calculated.
+2025-08-14 15:49:36,329 - INFO - Identifying standouts...
+2025-08-14 15:49:36,330 - INFO - Standouts identified.
+2025-08-14 15:49:36,330 - INFO - Flagging high returns/cancels...
+2025-08-14 15:49:36,331 - INFO - Flags complete.
+2025-08-14 15:49:36,331 - INFO - Computing 8-week trend...
+2025-08-14 15:49:37,090 - INFO - Computed trend for 8 weeks
+2025-08-14 15:49:37,091 - INFO - 8-week trend computed in 0.76 seconds.
+2025-08-14 15:49:37,091 - INFO - 8-week trend complete.
+2025-08-14 15:49:37,151 - INFO - Cleared sales_full.
+2025-08-14 15:49:37,152 - INFO - Calculating conversion rates...
+2025-08-14 15:49:37,173 - INFO - Conversion Rates - TY: 10.94%, LY: 9.72%
+2025-08-14 15:49:37,173 - INFO - Conversion rates calculated: TY 10.94%, LY 9.72%
+2025-08-14 15:49:37,235 - INFO - Cleared website_class.
+2025-08-14 15:49:37,236 - INFO - Generating plots...
+2025-08-14 15:49:48,514 - INFO - Saved plot: 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:49:48,515 - INFO - Saved 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:49:48,515 - INFO - Plots generated.
+2025-08-14 15:49:48,515 - INFO - Exporting to Excel...
+2025-08-14 15:49:48,598 - INFO - Exported class_agg
+2025-08-14 15:49:48,599 - INFO - Exported key data to Excel
+2025-08-14 15:49:48,599 - INFO - Excel exports completed.
+2025-08-14 15:49:48,599 - INFO - Generating insights...
+2025-08-14 15:49:48,600 - INFO - Sales Growth: 17522.20%
+2025-08-14 15:49:48,602 - INFO - Insights generated.
+2025-08-14 15:49:48,602 - INFO - Starting email send...
+2025-08-14 15:49:48,602 - INFO - Preparing email...
+2025-08-14 15:49:48,651 - INFO - Failed to send email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:49:48,651 - ERROR - Failed to send email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:49:48,652 - INFO - Analysis failed: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:49:48,652 - ERROR - Analysis failed: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:49:48,680 - INFO - Failed to send fallback email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 504, in <module>
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:49:48,680 - ERROR - Failed to send fallback email: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 474, in <module>
+    send_email()
+    ~~~~~~~~~~^^
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 448, in send_email
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\john.hritz\OneDrive - Leviton\Documents\Python\Online Weekly Sales Analysis.py", line 504, in <module>
+    mail.Attachments.Add(attachment_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "<COMObject <unknown>>", line 2, in Add
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Path does not exist. Verify the path is correct.', None, 0, -2147024893), None)
+
+2025-08-14 15:55:31,309 - INFO - Loading data lazily...
+2025-08-14 15:55:31,311 - INFO - Scanned and filtered online_sales.parquet
+2025-08-14 15:55:31,311 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-14 15:55:31,312 - INFO - Scanned merged_classification.parquet
+2025-08-14 15:55:31,312 - INFO - Scanned and filtered online_stores.parquet
+2025-08-14 15:55:31,312 - INFO - Successfully scanned all Parquet files
+2025-08-14 15:55:31,318 - INFO - Data scanned in 0.01 seconds. Memory: Python: 182.14 MB, Total Used: 7460.55 MB, Available: 8185.04 MB
+2025-08-14 15:55:31,318 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-14 15:55:31,319 - INFO - Casting complete in sales.
+2025-08-14 15:55:31,319 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-14 15:55:31,319 - INFO - Casting complete in stores.
+2025-08-14 15:55:31,320 - INFO - Starting lazy data joins...
+2025-08-14 15:55:31,320 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-14 15:55:31,331 - INFO - 1. (sales_class join - Python Mem: 182.25 MB, Total Used: 7460.90 MB, Available: 8184.70 MB)
+2025-08-14 15:55:34,338 - INFO - sales_class join (lazy) complete. Memory: Python: 182.22 MB, Total Used: 7452.62 MB, Available: 8192.97 MB
+2025-08-14 15:55:34,339 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-14 15:55:34,348 - INFO - 1. (re-casting - Python Mem: 182.25 MB, Total Used: 7452.62 MB, Available: 8192.97 MB)
+2025-08-14 15:55:37,350 - INFO - Re-casting complete in sales_class.
+2025-08-14 15:55:37,351 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-14 15:55:37,361 - INFO - 1. (sales_full join - Python Mem: 182.25 MB, Total Used: 7451.29 MB, Available: 8194.31 MB)
+2025-08-14 15:55:40,368 - INFO - sales_full join complete. Memory: Python: 3237.91 MB, Total Used: 10514.38 MB, Available: 5131.22 MB
+2025-08-14 15:55:40,368 - INFO - Lazy joining website to classification on 'oms id +'...
+2025-08-14 15:55:40,381 - INFO - 1. (website_class join - Python Mem: 3263.86 MB, Total Used: 10514.94 MB, Available: 5130.66 MB)
+2025-08-14 15:55:43,383 - INFO - website_class join complete.
+2025-08-14 15:55:43,383 - INFO - Successfully performed data joins
+2025-08-14 15:55:43,383 - INFO - Data joins completed in 12.06 seconds.
+2025-08-14 15:55:43,437 - INFO - Cleared temporary variables.
+2025-08-14 15:55:43,437 - INFO - Extracting week for sales_full...
+2025-08-14 15:55:43,438 - INFO - Extracting week and year for sales_full...
+2025-08-14 15:55:43,885 - INFO - sales_full week extraction complete.
+2025-08-14 15:55:43,886 - INFO - Extracting week for website_class...
+2025-08-14 15:55:43,886 - INFO - Extracting week and year for website_class...
+2025-08-14 15:55:43,961 - INFO - website_class week extraction complete.
+2025-08-14 15:55:43,962 - INFO - Identifying recent week...
+2025-08-14 15:55:44,142 - INFO - Most recent week: Fiscal Week 8 of 2025, Week Number: 8, Year: 2025
+2025-08-14 15:55:44,142 - INFO - Recent week identified: Fiscal Week 8 of 2025
+2025-08-14 15:55:44,143 - INFO - Safe recent_week for files: Fiscal_Week_8_of_2025
+2025-08-14 15:55:44,143 - INFO - Filtering recent sales...
+2025-08-14 15:55:44,218 - INFO - Recent sales filtered.
+2025-08-14 15:55:44,218 - INFO - Starting aggregations...
+2025-08-14 15:55:44,218 - INFO - Aggregating by ['online merch dept +', 'online class +', 'online subclass +']...
+2025-08-14 15:55:44,289 - INFO - Aggregated sales by ['online merch dept +', 'online class +', 'online subclass +']
+2025-08-14 15:55:44,289 - INFO - Aggregated by ['online merch dept +', 'online class +', 'online subclass +'] in 0.07 seconds.
+2025-08-14 15:55:44,289 - INFO - Aggregations complete.
+2025-08-14 15:55:44,290 - INFO - Calculating classification split...
+2025-08-14 15:55:44,298 - INFO - Classification split calculated.
+2025-08-14 15:55:44,298 - INFO - Calculating ship from agg...
+2025-08-14 15:55:44,350 - INFO - Ship from agg calculated.
+2025-08-14 15:55:44,350 - INFO - Identifying standouts...
+2025-08-14 15:55:44,351 - INFO - Standouts identified.
+2025-08-14 15:55:44,351 - INFO - Flagging high returns/cancels...
+2025-08-14 15:55:44,353 - INFO - Flags complete.
+2025-08-14 15:55:44,353 - INFO - Computing 8-week trend...
+2025-08-14 15:55:44,942 - INFO - Computed trend for 8 weeks
+2025-08-14 15:55:44,942 - INFO - 8-week trend computed in 0.59 seconds.
+2025-08-14 15:55:44,943 - INFO - 8-week trend complete.
+2025-08-14 15:55:44,997 - INFO - Cleared sales_full.
+2025-08-14 15:55:44,997 - INFO - Calculating conversion rates...
+2025-08-14 15:55:45,011 - INFO - Conversion Rates - TY: 10.94%, LY: 9.72%
+2025-08-14 15:55:45,011 - INFO - Conversion rates calculated: TY 10.94%, LY 9.72%
+2025-08-14 15:55:45,076 - INFO - Cleared website_class.
+2025-08-14 15:55:45,076 - INFO - Generating plots...
+2025-08-14 15:55:55,440 - INFO - Saved plot: 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:55:55,441 - INFO - Saved 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:55:55,441 - INFO - Plots generated.
+2025-08-14 15:55:55,441 - INFO - Exporting to Excel...
+2025-08-14 15:55:55,524 - INFO - Exported class_agg_Fiscal_Week_8_of_2025.xlsx
+2025-08-14 15:55:55,524 - INFO - Exported key data to Excel
+2025-08-14 15:55:55,524 - INFO - Excel exports completed.
+2025-08-14 15:55:55,525 - INFO - Generating insights...
+2025-08-14 15:55:55,526 - INFO - Sales Growth: 17522.20%
+2025-08-14 15:55:55,527 - INFO - Insights generated.
+2025-08-14 15:55:55,527 - INFO - Starting email send...
+2025-08-14 15:55:55,527 - INFO - Preparing email...
+2025-08-14 15:55:55,597 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\8_week_trend_Fiscal_Week_8_of_2025.png to email
+2025-08-14 15:55:55,597 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-14 15:55:55,613 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\class_agg_Fiscal_Week_8_of_2025.xlsx to email
+2025-08-14 15:55:55,613 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\class_agg_Fiscal_Week_8_of_2025.xlsx
+2025-08-14 15:55:55,614 - INFO - Total attachments: 2
+2025-08-14 15:55:55,653 - INFO - Email sent successfully
+2025-08-14 15:55:55,653 - INFO - Email sent successfully.
+2025-08-14 15:55:55,672 - INFO - Analysis complete for Fiscal Week 8 of 2025. If no email received, check log and Outlook.
+2025-08-14 15:55:55,672 - INFO - Analysis complete for Fiscal Week 8 of 2025
+2025-08-21 08:33:50,277 - INFO - Loading data lazily...
+2025-08-21 08:33:50,279 - INFO - Scanned and filtered online_sales.parquet
+2025-08-21 08:33:50,280 - INFO - Scanned online_website_anaylsis.parquet
+2025-08-21 08:33:50,280 - INFO - Scanned merged_classification.parquet
+2025-08-21 08:33:50,280 - INFO - Scanned and filtered online_stores.parquet
+2025-08-21 08:33:50,280 - INFO - Successfully scanned all Parquet files
+2025-08-21 08:33:50,286 - INFO - Data scanned in 0.01 seconds. Memory: Python: 181.82 MB, Total Used: 9895.48 MB, Available: 5750.12 MB
+2025-08-21 08:33:50,286 - INFO - Casting 'icr store +' to Utf8 in sales...
+2025-08-21 08:33:50,287 - INFO - Casting complete in sales.
+2025-08-21 08:33:50,287 - INFO - Casting 'icr store +' to Utf8 in stores...
+2025-08-21 08:33:50,287 - INFO - Casting complete in stores.
+2025-08-21 08:33:50,287 - INFO - Starting lazy data joins...
+2025-08-21 08:33:50,287 - INFO - Lazy joining sales to classification on 'oms id +'...
+2025-08-21 08:33:50,302 - INFO - sales_class join (lazy) complete. Memory: Python: 181.93 MB, Total Used: 9875.83 MB, Available: 5769.77 MB
+2025-08-21 08:33:50,302 - INFO - Re-casting 'icr store +' to Utf8 in sales_class...
+2025-08-21 08:33:50,314 - INFO - 1. (re-casting - Python Mem: 181.96 MB, Total Used: 9876.13 MB, Available: 5769.47 MB)
+2025-08-21 08:33:53,316 - INFO - Re-casting complete in sales_class.
+2025-08-21 08:33:53,316 - INFO - Lazy joining sales_class to stores on 'icr store +'...
+2025-08-21 08:33:53,327 - INFO - 1. (sales_full join - Python Mem: 182.09 MB, Total Used: 9850.57 MB, Available: 5795.03 MB)
+2025-08-21 08:33:56,333 - INFO - sales_full join complete. Memory: Python: 3238.44 MB, Total Used: 12055.74 MB, Available: 3589.86 MB
+2025-08-21 08:33:56,334 - INFO - Lazy joining website to classification on 'oms id +'...
+2025-08-21 08:33:56,344 - INFO - 1. (website_class join - Python Mem: 3238.46 MB, Total Used: 12056.10 MB, Available: 3589.50 MB)
+2025-08-21 08:33:56,465 - INFO - website_class join complete.
+2025-08-21 08:33:56,466 - INFO - Successfully performed data joins
+2025-08-21 08:33:56,466 - INFO - Data joins completed in 6.18 seconds.
+2025-08-21 08:33:56,526 - INFO - Cleared temporary variables.
+2025-08-21 08:33:56,527 - INFO - Extracting week for sales_full...
+2025-08-21 08:33:56,527 - INFO - Extracting week and year for sales_full...
+2025-08-21 08:33:56,986 - INFO - sales_full week extraction complete.
+2025-08-21 08:33:56,987 - INFO - Extracting week for website_class...
+2025-08-21 08:33:56,987 - INFO - Extracting week and year for website_class...
+2025-08-21 08:33:57,081 - INFO - website_class week extraction complete.
+2025-08-21 08:33:57,081 - INFO - Identifying recent week...
+2025-08-21 08:33:57,298 - INFO - Most recent week: Fiscal Week 8 of 2025, Week Number: 8, Year: 2025
+2025-08-21 08:33:57,299 - INFO - Recent week identified: Fiscal Week 8 of 2025
+2025-08-21 08:33:57,299 - INFO - Safe recent_week for files: Fiscal_Week_8_of_2025
+2025-08-21 08:33:57,299 - INFO - Filtering recent sales...
+2025-08-21 08:33:57,381 - INFO - Recent sales filtered.
+2025-08-21 08:33:57,381 - INFO - Starting aggregations...
+2025-08-21 08:33:57,381 - INFO - Aggregating by ['online merch dept +', 'online class +', 'online subclass +']...
+2025-08-21 08:33:57,482 - INFO - Aggregated sales by ['online merch dept +', 'online class +', 'online subclass +']
+2025-08-21 08:33:57,482 - INFO - Aggregated by ['online merch dept +', 'online class +', 'online subclass +'] in 0.10 seconds.
+2025-08-21 08:33:57,482 - INFO - Aggregations complete.
+2025-08-21 08:33:57,482 - INFO - Calculating classification split...
+2025-08-21 08:33:57,495 - INFO - Classification split calculated.
+2025-08-21 08:33:57,495 - INFO - Calculating ship from agg...
+2025-08-21 08:33:57,574 - INFO - Ship from agg calculated.
+2025-08-21 08:33:57,574 - INFO - Identifying standouts...
+2025-08-21 08:33:57,575 - INFO - Standouts identified.
+2025-08-21 08:33:57,575 - INFO - Flagging high returns/cancels...
+2025-08-21 08:33:57,578 - INFO - Flags complete.
+2025-08-21 08:33:57,578 - INFO - Computing 8-week trend...
+2025-08-21 08:33:58,387 - INFO - Computed trend for 8 weeks
+2025-08-21 08:33:58,388 - INFO - 8-week trend computed in 0.81 seconds.
+2025-08-21 08:33:58,390 - INFO - 8-week trend complete.
+2025-08-21 08:33:58,457 - INFO - Cleared sales_full.
+2025-08-21 08:33:58,457 - INFO - Calculating conversion rates...
+2025-08-21 08:33:58,479 - INFO - Conversion Rates - TY: 10.94%, LY: 9.72%
+2025-08-21 08:33:58,480 - INFO - Conversion rates calculated: TY 10.94%, LY 9.72%
+2025-08-21 08:33:58,593 - INFO - Cleared website_class.
+2025-08-21 08:33:58,594 - INFO - Generating plots...
+2025-08-21 08:34:09,560 - INFO - Saved plot: 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-21 08:34:09,561 - INFO - Saved 8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-21 08:34:09,561 - INFO - Plots generated.
+2025-08-21 08:34:09,561 - INFO - Exporting to Excel...
+2025-08-21 08:34:09,661 - INFO - Exported class_agg_Fiscal_Week_8_of_2025.xlsx
+2025-08-21 08:34:09,662 - INFO - Exported key data to Excel
+2025-08-21 08:34:09,662 - INFO - Excel exports completed.
+2025-08-21 08:34:09,662 - INFO - Generating insights...
+2025-08-21 08:34:09,663 - INFO - Sales Growth: 17522.20%
+2025-08-21 08:34:09,666 - INFO - Insights generated.
+2025-08-21 08:34:09,666 - INFO - Starting email send...
+2025-08-21 08:34:09,666 - INFO - Preparing email...
+2025-08-21 08:34:10,747 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\8_week_trend_Fiscal_Week_8_of_2025.png to email
+2025-08-21 08:34:10,747 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\8_week_trend_Fiscal_Week_8_of_2025.png
+2025-08-21 08:34:10,772 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\class_agg_Fiscal_Week_8_of_2025.xlsx to email
+2025-08-21 08:34:10,773 - INFO - Attached C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\reports\class_agg_Fiscal_Week_8_of_2025.xlsx
+2025-08-21 08:34:10,773 - INFO - Total attachments: 2
+2025-08-21 08:34:10,856 - INFO - Email sent successfully
+2025-08-21 08:34:10,857 - INFO - Email sent successfully.
+2025-08-21 08:34:10,930 - INFO - Analysis complete for Fiscal Week 8 of 2025. If no email received, check log and Outlook.
+2025-08-21 08:34:10,930 - INFO - Analysis complete for Fiscal Week 8 of 2025

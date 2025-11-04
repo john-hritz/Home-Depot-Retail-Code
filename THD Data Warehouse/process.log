@@ -1,0 +1,8 @@
+Processed online_classification with 7069 rows, unique oms id + count: 7069 at 16:18:40  on 08/19/2025
+Success: One row per unique oms id + in merged file at 16:19:00  on 08/19/2025
+Merged FG Status Report into C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\Data_Tables\merged_classification.parquet with 7069 rows, unique oms id + count: 7069 at 16:19:00  on 08/19/2025
+Merged fields from FG Status: M P G, MPG Name, IPG, IPG Name, Prd Mgr, Basic-Dash
+Processed online_classification with 7069 rows, unique oms id + count: 7069 at 08:31:58  on 08/21/2025
+Success: One row per unique oms id + in merged file at 08:32:34  on 08/21/2025
+Merged FG Status Report into C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\Data_Tables\merged_classification.parquet with 7069 rows, unique oms id + count: 7069 at 08:32:34  on 08/21/2025
+Merged fields from FG Status: M P G, MPG Name, IPG, IPG Name, Prd Mgr, Basic-Dash
