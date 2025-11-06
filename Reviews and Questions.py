@@ -1,3 +1,4 @@
+# files must be moved to sharepoint at completion of code
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
