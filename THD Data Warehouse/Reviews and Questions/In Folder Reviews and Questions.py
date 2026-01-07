@@ -1,4 +1,5 @@
 # files must be moved to sharepoint at completion of code
+#Python files come out on Wedneday around 3 PM ET, they are the python no numbers
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
@@ -27,7 +28,8 @@ two_weeks_ago = current_date - timedelta(days=14)
 
 # Step 1: Define and create directories, find input files
 start_time = time.time()
-BASE_DIR = os.path.join(".", "THD Data Warehouse", "Reviews and Questions")
+# Use absolute path to ensure script finds files regardless of current working directory
+BASE_DIR = r"C:\Users\john.hritz\OneDrive - Leviton\Documents\Python\THD Data Warehouse\Reviews and Questions"
 os.makedirs(BASE_DIR, exist_ok=True)
 
 # Search for CSV files
@@ -38,10 +40,16 @@ questions_file = None
 for file in input_files:
     file_basename = os.path.basename(file).lower()
     print(f"Checking file: {file_basename}")
-    if "bazaarvoice_network_reviews" in file_basename or fnmatch.fnmatch(file_basename, "bazaarvoice_python_marketing*.csv"):
+    if ("bazaarvoice_python_network_reviews" in file_basename
+            or "marketing" in file_basename
+            or fnmatch.fnmatch(file_basename, "bazaarvoice_python_marketing*.csv")
+            or "reviews" in file_basename):
         reviews_file = file
         print(f"Selected reviews file: {file}")
-    elif "bazaarvoice_network_questions" in file_basename or fnmatch.fnmatch(file_basename, "bazaarvoice_python_questions*.csv"):
+    elif ("bazaarvoice_python_network_questions" in file_basename
+            or "questions" in file_basename
+            or fnmatch.fnmatch(file_basename, "bazaarvoice_python_questions*.csv")
+            or fnmatch.fnmatch(file_basename, "*questions*.csv")):
         questions_file = file
         print(f"Selected questions file: {file}")
 
@@ -171,7 +179,7 @@ if reviews_file:
         "Product Name", "UPC", "Review First Moderated Date", "Overall Rating",
         "# Days To Respond", "Review Submission Date", "Responder Portal User Name",
         "Reviewer Display Name", "Review Title", "Review Text", "Response Text",
-        "Response Submission Date"
+        "Response Submission Date", # "Review ID" removed — source CSV uses 'Response ID'
     ]
     reviews_date_columns = ["Review Submission Date", "Review First Moderated Date"]
     reviews_string_columns = [
@@ -192,7 +200,8 @@ if reviews_file:
         ("Review Title", pa.string()),
         ("Review Text", pa.string()),
         ("Response Text", pa.string()),
-        ("Response Submission Date", pa.string())
+        ("Response Submission Date", pa.string()),
+    #    ("Review ID", pa.string())
     ])
     print("\nProcessing Reviews file...")
     reviews_success, reviews_time, reviews_input_row_count = process_csv_file(
@@ -211,7 +220,7 @@ if questions_file:
         "Network Destination (Destination Instance)", "Product ID", "Product Page URL", "UPC",
         "Product Name", "Asker Display Name", "Question Submission Date", "Question Title",
         "Question Text", "Answer Submission Date", "Answer Text", "# Days To Answer",
-        "Marked \"Can't Answer\""
+        "Marked \"Can't Answer\"","Answered by Brand", "Question ID"
     ]
     questions_date_columns = ["Question Submission Date"]
     questions_string_columns = [
@@ -230,7 +239,9 @@ if questions_file:
         ("Answer Submission Date", pa.string()),
         ("Answer Text", pa.string()),
         ("# Days To Answer", pa.string()),
-        ("Marked \"Can't Answer\"", pa.string())
+        ("Marked \"Can't Answer\"", pa.string()),
+        ("Answered by Brand", pa.string()),
+        ("Question ID", pa.string())
     ])
     print("\nProcessing Questions file...")
     questions_success, questions_time, questions_input_row_count = process_csv_file(
@@ -368,6 +379,7 @@ if questions_success and excel_success:
             ("Question Submission Date", pa.timestamp('ns')),
             ("Question Title", pa.string()),
             ("Question Text", pa.string()),
+            ("Question ID", pa.string()),
             ("Answer Submission Date", pa.string()),
             ("Answer Text", pa.string()),
             ("# Days To Answer", pa.string()),
@@ -413,7 +425,7 @@ if questions_with_fg_success:
     try:
         questions_df = pq.read_table(output_questions_with_fg_file).to_pandas()
         required_columns = [
-            "Basic_Dash", "BU", "MPG", "IPG", "Product ID", "Product Page URL", "UPC",
+            "Basic_Dash", "BU", "MPG", "IPG", "Product ID", "Question ID", "Product Name", "Product Page URL", "UPC",
             "Question Submission Date", "Question Title", "Question Text", "Answer Text",
             "Marked \"Can't Answer\""
         ]
@@ -578,7 +590,8 @@ if reviews_with_fg_success:
         reviews_df = pq.read_table(output_reviews_with_fg_file).to_pandas()
         print(f"Columns in reviews_with_fg_data.parquet: {reviews_df.columns.tolist()}")
         required_columns = [
-            "Basic_Dash", "BU", "MPG", "IPG", "Product ID", "Product Name", "Product Page URL",
+            "Basic_Dash", "BU", "MPG", "IPG", "Product ID", #"Review ID", 
+            "Product Name", "Product Page URL",
             "UPC", "Review First Moderated Date", "Overall Rating", "Review Text", "Response Text"
         ]
         missing_columns = [col for col in required_columns if col not in reviews_df.columns]
